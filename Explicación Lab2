@@ -1,0 +1,7 @@
+LAB 2
+En este segundo laboratorio he seguido los pasos especificados en el PowerPoint colgado.
+He añadido algunos objetos como son:
+  1. Cuatro textos en los que contabilizo el trigo lanzado, las ovejas salvadas y las dropeadas, y por último un texto 
+     meramente informativo en el que informo al usuario del máximo de ovejas que pueden caerse antes de finalizarse el juego.
+  2. Dos scripts que me permiten controlar cuando finalizar el juego, y todos los sonidos que estarán incluidos en según que
+     acciones.
