@@ -19,7 +19,10 @@ public class GameStateManager : MonoBehaviour
 
     //Variables SheepDropped
     public Text sheepDroppedText;
-    private int count_sheep;
+
+    //Variables SheepSaved
+    public Text sheepSavedText;
+
 
    
     // Start is called before the first frame update
@@ -27,6 +30,7 @@ public class GameStateManager : MonoBehaviour
     {
         Instance = this;
        SetCountText ();
+       SetCountText1 ();
 
     }
 
@@ -41,7 +45,8 @@ public class GameStateManager : MonoBehaviour
 
     public void SavedSheep()
     {
-    	sheepSaved++;
+	sheepSaved++;
+	SetCountText1 ();
     }
 
     private void GameOver()
@@ -62,7 +67,11 @@ public class GameStateManager : MonoBehaviour
 
     void SetCountText ()
     {
-	sheepDroppedText.text = "Sheep Dropped: " + sheepDropped.ToString ();
+	sheepDroppedText.text = "Dropped: " + sheepDropped.ToString ();
+    }
+    void SetCountText1 ()
+    {
+	sheepSavedText.text = "Saved: " + sheepSaved.ToString ();
     }
 
 }
