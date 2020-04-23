@@ -783,7 +783,6 @@ MonoBehaviour:
   canSpawn: 1
   sheepPrefab: {fileID: 802410221}
   sheepSpawnPositions: []
-  sheepList: []
   timeBetweenSpawns: 0
 --- !u!4 &1603802032
 Transform:
@@ -890,14 +889,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canSpawn: 1
-  sheepPrefab: {fileID: 4553636327426936317, guid: a077ecb7b3c544eb89dcebc177713b7d,
-    type: 3}
-  sheepSpawnPositions: []
-  sheepList:
-  - {fileID: 354782335}
-  - {fileID: 658657286}
-  - {fileID: 1193603703}
-  timeBetweenSpawns: 1
+  sheepPrefab: {fileID: 802410221}
+  sheepSpawnPositions:
+  - {fileID: 658657287}
+  - {fileID: 1193603704}
+  - {fileID: 354782336}
+  timeBetweenSpawns: 2
 --- !u!4 &2089688439
 Transform:
   m_ObjectHideFlags: 0

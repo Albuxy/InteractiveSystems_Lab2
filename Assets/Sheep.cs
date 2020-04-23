@@ -31,18 +31,18 @@ public class Sheep : MonoBehaviour
 
     private void HitByHay()
     {
+	sheepSpawner.RemoveSheepFromList(gameObject);
         hitByHay = true; // 1
         runSpeed = 0; // 2
         Destroy(gameObject, gotHayDestroyDelay); // 3
-        sheepSpawner.RemoveSheepFromList(gameObject);
     }
 
     private void Drop()
     {
+	sheepSpawner.RemoveSheepFromList(gameObject);
         myRigidbody.isKinematic = false; // 1 
         myCollider.isTrigger = false; // 2
         Destroy(gameObject, dropDestroyDelay); // 3
-        sheepSpawner.RemoveSheepFromList(gameObject);
     }
 
     private void OnTriggerEnter(Collider other) // 1 
@@ -60,6 +60,6 @@ public class Sheep : MonoBehaviour
 
     public void SetSpawner(SheepSpawner spawner)
     {
-        sheepSpawner = spawner;
+   	 sheepSpawner = spawner;
     }
 }
